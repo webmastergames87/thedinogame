@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Dino Bridge Game</title>
+	<meta name='description' content='The dinosaur dridge game you need to build the bridge to cross the world. Tap and hold left mouse button until the bridge is long enough to fit the empty distance.'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="master.css">
+	<link rel='canonical' href='https://thedinogame.com/dino-bridge/'>
+	<script type="text/javascript">
+function disableEnterKey(e)
+{
+	if (e.ctrlKey){
+     var key;
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox (97)
+     if (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43)
+     {
+         
+          return false;
+     }else
+     	return true;
+     }
+}
+
+function disable_copy(e)
+{	
+	var elemtype = e.target.nodeName;
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	elemtype = elemtype.toUpperCase();
+	var checker_IMG = '';
+	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		
+		if (isSafari)
+			return true;
+		else
+			return false;
+	}	
+}
+function disable_copy_ie()
+{
+	var elemtype = window.event.srcElement.nodeName;
+	elemtype = elemtype.toUpperCase();
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		return false;
+	}
+}	
+function reEnable()
+{
+	return true;
+}
+document.onkeydown = disableEnterKey;
+document.onselectstart = disable_copy_ie;
+if(navigator.userAgent.indexOf('MSIE')==-1)
+{
+	document.onmousedown = disable_copy;
+	document.onclick = reEnable;
+}
+function disableSelection(target)
+{
+    if (typeof target.onselectstart!="undefined")
+    target.onselectstart = disable_copy_ie;
+    else if (typeof target.style.MozUserSelect!="undefined")
+    {target.style.MozUserSelect="none";}
+    else
+    target.onmousedown=function(){return false}
+    target.style.cursor = "default";
+}
+window.onload = function(){disableSelection(document.body);};
+</script>
+<script type="text/javascript">
+document.ondragstart = function() { return false;}
+function nocontext(e) {
+return false;
+}
+document.oncontextmenu = nocontext;
+</script>
+</head>
+<body class="  w-[100%] h-[100%] overflow-x-hidden  fixed  bg-cover bg-no-repeat bg-fixed ">
+    <h1 class="fixed z-[100] top-0 left-0 hidden lg:flex"><a href="/">Home</a></h1>
+    <div class=" gaa w-full h-full  absolute flex justify-center items-center">
+        <div
+            class="score w-[90px] h-[50px] bg-black opacity-80 absolute top-[30px] rounded-[10px] flex justify-center items-center hidden">
+            <h2 class="text-[40px] text-white">0</h2>
+        </div>
+        <!-- Only restart game -->
+        <div
+            class="clkTest w-[100px] lg:w-[150px] h-[100px] lg:h-[150px] bg-red-600 text-[10px] lg:text-[20px] text-white rounded-[100%] cursor-pointer  justify-center items-center hidden">
+            <h5 class="text-center">RESTART</h5>
+        </div>
+
+        <div class="w-full h-full menue absolute z-[90]  flex  flex-col justify-start items-center ">
+            <div class="my-[20px] ">
+                <h1 class="text-[60px] lg:text-[80px] font-bold leading-[70px]">DINO BRIDGE</h1>
+                <h1 class="text-[60px] lg:text-[90px]  font-bold text-center  leading-[80px]"></h1>
+            </div>
+            <h2 class="play w-[100px] lg:w-[150px] h-[100px] lg:h-[150px] bg-red-600 cursor-pointer  rounded-[100%] text-center leading-[100px] lg:leading-[150px] text-[20px] lg:text-[30px] text-white ">PLAY</h2>
+            <div class="w-[250px] lg:w-[300px] cont hero h-auto bg-[#FDECB8]  absolute flex justify-center flex-wrap rounded-[10px] hidden "></div>
+            </div>
+        </div>
+    </div>
+    <div class="clk">
+        <div class=" relative sm:left-[0%]  lg:left-[40%]">
+            <!-- Test bottom  -->
+            <!-- main DIV game -->
+            <div class="w-[90000px] main h-[100vh]  relative right-[0px]  items-end  flex duration-500 overflow-x-auto">
+                <!-- const wood game -->
+                <!-- class="w-[30px] ball h-[30px] bg-[url('../../img/hero/heroOP.png')] bg-cover bg-no-repeat absolute bottom-[50%] left-[20px] z-50 duration-500"> -->
+                <div class="ball   bg-cover bg-no-repeat absolute bottom-[50%] left-[15px] z-50 duration-500">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/app.js"></script>
+<script src="js/app-property.js"></script>
+</html>

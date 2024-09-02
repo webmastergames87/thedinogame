@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The Dino Run DX</title>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='description' content='Control your iconic raptor through an endless assortment of procedurally generated landscapes and outrun the ever-approaching wall of doom. '>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+  <link rel='canonical' href='https://thedinogame.com/dino-run-dx/'>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+function disableEnterKey(e)
+{
+	if (e.ctrlKey){
+     var key;
+     if(window.event)
+          key = window.event.keyCode;     //IE
+     else
+          key = e.which;     //firefox (97)
+     if (key == 97 || key == 65 || key == 67 || key == 99 || key == 88 || key == 120 || key == 26 || key == 85  || key == 86 || key == 83 || key == 43)
+     {
+         
+          return false;
+     }else
+     	return true;
+     }
+}
+
+function disable_copy(e)
+{	
+	var elemtype = e.target.nodeName;
+	var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+	elemtype = elemtype.toUpperCase();
+	var checker_IMG = '';
+	if (elemtype == "IMG" && checker_IMG == 'checked' && e.detail >= 2) {show_wpcp_message(alertMsg_IMG);return false;}
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		
+		if (isSafari)
+			return true;
+		else
+			return false;
+	}	
+}
+function disable_copy_ie()
+{
+	var elemtype = window.event.srcElement.nodeName;
+	elemtype = elemtype.toUpperCase();
+	if (elemtype != "TEXT" && elemtype != "TEXTAREA" && elemtype != "INPUT" && elemtype != "PASSWORD" && elemtype != "SELECT" && elemtype != "OPTION" && elemtype != "EMBED")
+	{
+		return false;
+	}
+}	
+function reEnable()
+{
+	return true;
+}
+document.onkeydown = disableEnterKey;
+document.onselectstart = disable_copy_ie;
+if(navigator.userAgent.indexOf('MSIE')==-1)
+{
+	document.onmousedown = disable_copy;
+	document.onclick = reEnable;
+}
+function disableSelection(target)
+{
+    if (typeof target.onselectstart!="undefined")
+    target.onselectstart = disable_copy_ie;
+    else if (typeof target.style.MozUserSelect!="undefined")
+    {target.style.MozUserSelect="none";}
+    else
+    target.onmousedown=function(){return false}
+    target.style.cursor = "default";
+}
+window.onload = function(){disableSelection(document.body);};
+</script>
+<script type="text/javascript">
+document.ondragstart = function() { return false;}
+function nocontext(e) {
+return false;
+}
+document.oncontextmenu = nocontext;
+</script>
+</head>
+<body class="online main-page">
+<header id="main-frame-error" class="header-wrapper wrapperpage">
+ <div id="dino-game">
+ <h1>The Dino Run DX</h1>
+ <h3>Press Space or Up Arrow (↑) to jump The Dino</h3>
+ </div>
+</header>
+ 
+<div class="wrapperpage" align="center">
+<iframe src="https://vseigru.net/10/igra-beg-dinozavra-2/" style="width:100%; height:40vh; margin:0; padding:0; border:none></iframe>
+<center>
+<!-- IKLAN DISINI-->
+</center>
+<div>
+<script src="../index.js"></script>
+<div class="copyright"><strong>&copy; Google Chrome Dinosaur Game</strong>
+<br><br>   
+<span>
+<a href="../dcma.html">DMCA</a>
+</span>
+/
+<span>
+<a href="../term-of-service.html">Term of Use</a>
+</span>
+/
+<span>
+<a href="../privacy-policy.html">Privacy Policy</a>
+</span>
+</div>
+</body>
+</html>
