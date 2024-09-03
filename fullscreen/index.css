@@ -11,7 +11,7 @@ html, body {
 
 .row {
   display: flex;
-  z-index: 99;
+  z-index: 97;
 }
 .column1 {
   flex: 50%;
@@ -25,7 +25,7 @@ html, body {
   padding: 5px;
   height: 90px;
   background-color:#efefef;
-  z-index: 99;
+  z-index: 98;
 }
 
 .icon {
