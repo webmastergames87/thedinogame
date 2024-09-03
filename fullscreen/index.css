@@ -11,6 +11,7 @@ html, body {
 
 .row {
   display: flex;
+  z-index: 99;
 }
 .column1 {
   flex: 50%;
