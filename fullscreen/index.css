@@ -18,12 +18,14 @@ html, body {
   padding: 5px;
   height: 90px;
   background-color:#efefef;
+  z-index: 99;
 }
 .column2 {
   flex: 50%;
   padding: 5px;
   height: 90px;
   background-color:#efefef;
+  z-index: 99;
 }
 
 .icon {
