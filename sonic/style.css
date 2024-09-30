@@ -19,7 +19,7 @@ ul { margin: 0; padding: 0; list-style: none;}
 p { margin: 0 0 10px; font-size: 16px; line-height: 18px; text-align: center;}
 .wrapperpage { width: auto; max-width: 620px; margin-left: auto; margin-right: auto; font-family: "Pixelify Sans", sans-serif; font-weight: 400; font-style: normal; color: #525252;}
 #dino-game { margin: 0; padding: 0;}
-#dino-game h3 { margin: 0 0 10px; font-size: 16px; font-family: "Times New Roman", Times, serif; text-align: center; color: #525252;}
+#dino-game h3 { margin: 0 0 10px; font-size: 16px; font-family: "Times New Roman", Times, serif; text-align: center; color: #ff1c1c;}
 .online .header-wrapper { margin-bottom: 40px; padding-top: 18px;}
 .online .runner-container,.online .runner-canvas { position: relative;}
 .other-versions { margin-bottom: 30px; text-align: center;}
