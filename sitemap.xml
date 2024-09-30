@@ -35,4 +35,9 @@ http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <lastmod>2024-09-01T03:20:55+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+<loc>https://thedinogame.com/spongebob/</loc>
+<lastmod>2024-09-30T06:44:37+00:00</lastmod>
+<priority>0.80</priority>
+</url>  
 </urlset>
