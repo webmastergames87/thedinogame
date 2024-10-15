@@ -99,6 +99,7 @@ position: relative;
 #dino-game h1 { margin: 10px 0 6px; font-size: 18px; text-align: center; font-weight: normal; font-family: "Press Start 2P", system-ui;}
 #dino-game p { margin: 0 0 10px; font-size: 15px; line-height: 17px; text-align: center;}
 #offline-resources {display: none;}
+h3 {margin: 0 0 10px; font-size: 15px; font-weight: normal; line-height: 17px; text-align: center;}
 a { color: #000;}
 ul { margin: 0; padding: 0; list-style: none; z-index: 99;}
 .other-versions { padding: 20px 0 0px; text-align: center;}
@@ -131,8 +132,9 @@ ul { margin: 0; padding: 0; list-style: none; z-index: 99;}
   padding: 8px; 
   text-align: center;
 } 
+h3 { display:none;}
 p {
-  display: none;
+  font-size: 14px;
 }
 #dino-game h1 {
   margin: 15px 0 5px;
@@ -167,6 +169,7 @@ p {
   margin: 15px 0 5px;
   font-size : 11px;
 }
+h3 { display:none;}
 }
 
 @media (min-height: 240px) and (orientation: landscape) {
@@ -176,6 +179,7 @@ p {
   .icon-offline {
     margin-bottom: 20px;
   }
+  p {display:none;}
 }
 
 @media (max-height: 320px) and (orientation: landscape) {
@@ -195,9 +199,9 @@ p {
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), 
 only screen and (min-resolution: 2dppx) { 
-p {
-  display: none;
-}
+p {font-size: 14px;}
+h3 { display:none;}
+.copyright {font-size: 14px;}
 }
 
 .arcade-mode,
