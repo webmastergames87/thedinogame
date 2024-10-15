@@ -2,6 +2,7 @@
  * Use of this source code is governed by a BSD-style license that can be
  * found in the LICENSE file. */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"');
 html, body {
   padding: 0;
   margin: 0;
@@ -11,21 +12,19 @@ html, body {
 
 .row {
   display: flex;
-  z-index: 97;
+  z-index: 99;
 }
 .column1 {
   flex: 50%;
   padding: 5px;
   height: 90px;
   background-color:#efefef;
-  z-index: 99;
 }
 .column2 {
   flex: 50%;
   padding: 5px;
   height: 90px;
   background-color:#efefef;
-  z-index: 98;
 }
 
 .icon {
@@ -106,6 +105,8 @@ ul { margin: 0; padding: 0; list-style: none; z-index: 99;}
 .other-versions ul li { float: left; margin: 0 5px; text-align: center;}
 .other-versions ul li img { display: block;}
 .other-versions ul li a { font-size: 12px; font-weight: bold; text-decoration: none; color: #000000;}
+.description {font-size: 16px; font-family: "Pixelify Sans", sans-serif; font-weight: 400; font-style: normal; text-align: center; color: #525252;}
+.copyright { position: absolute; left: 0; bottom: 0; padding: 15px 0; width: 100%; color: #000; font-family: "Times New Roman", Times, serif; text-align: center;}
 
 @media (max-width: 420px) {
   .suggested-left > #control-buttons, .suggested-right > #control-buttons {
