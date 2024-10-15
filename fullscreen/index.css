@@ -99,6 +99,7 @@ position: relative;
 #dino-game h1 { margin: 10px 0 6px; font-size: 18px; text-align: center; font-weight: normal; font-family: "Press Start 2P", system-ui;}
 #dino-game p { margin: 0 0 10px; font-size: 15px; line-height: 17px; text-align: center;}
 #offline-resources {display: none;}
+a { color: #000;}
 ul { margin: 0; padding: 0; list-style: none; z-index: 99;}
 .other-versions { padding: 20px 0 0px; text-align: center;}
 .other-versions ul { display: inline-block; margin: 0;}
