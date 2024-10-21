@@ -44,7 +44,7 @@ header p a:hover{text-decoration:underline;background-color:rgba(30,144,255,.1);
 /*!* Don't use the subframe error div when the error is in a main frame. *!*/
 .icon{-webkit-user-select:none;display:inline-block}
 .icon-offline{content:-webkit-image-set(url(../images/100-error-offline.png) 1x,url(../images/200-error-offline.png) 2x);position:relative}
-.other-versions { margin-bottom: 0px; text-align: center;}
+.other-versions { margin-bottom: 0px; font-family: "Pixelify Sans", sans-serif; text-align: center;}
 .other-versions ul { display: inline-block; margin: 0;}
 .other-versions ul li { float: left; margin: 20px 5px; text-align: center;}
 .other-versions ul li img { display: block;}
