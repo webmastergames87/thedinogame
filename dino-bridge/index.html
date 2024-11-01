@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>The Dino Bridge Game</title>
-	<meta name='description' content='The chrome dinosaur bridge game you need to build the bridge to cross the world. Tap and hold left mouse button until the bridge is long enough to fit the empty distance.'>
+	<meta name='description' content='The dinosaur dridge game you need to build the bridge to cross the world. Tap and hold left mouse button until the bridge is long enough to fit the empty distance.'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="menu.min.css">
 	<link rel='canonical' href='https://thedinogame.com/dino-bridge/'>
 	<script type="text/javascript">
 function disableEnterKey(e)
@@ -83,7 +84,25 @@ document.oncontextmenu = nocontext;
 </script>
 </head>
 <body class="  w-[100%] h-[100%] overflow-x-hidden  fixed  bg-cover bg-no-repeat bg-fixed ">
-    <h1 class="fixed z-[100] top-0 left-0 hidden lg:flex"><a href="/">Home</a></h1>
+<div class="menu-button">
+<input type="checkbox" id="button-check" role="button"> 
+<label class="menu-label" for="button-check" aria-hidden="true">
+<span class="burger"><span class="bar"></span></span>
+</label>
+<div id="menu-w" class="is-active">
+<div class="menu-header other-versions">
+<ul>
+  <li><a href="/"><img src="../img/dino.png"/><span>Home</span></a></li>
+  <li><a href="../sonic/"><img src="../img/sonic.png"/><span>Sonic</span></a></li>
+  <li><a href="../mario/"><img src="../img/mario.png"/><span>Mario</span></a></li>	
+  <li><a href="../spiderman/"><img src="../img/spiderman.png"/> <span>Spidey</span></a></li>
+  <li><a href="../spongebob/"><img src="../img/spongebob.png"/><span>Sponge</span></a></li>	
+  <li><a href="../dino-bridge/" target="_blank"><img src="../img/dino-bridge.png"/><span>Bridge</span></a></li>		
+</ul>
+</div>
+</div>
+</div>
+
     <div class=" gaa w-full h-full  absolute flex justify-center items-center">
         <div
             class="score w-[90px] h-[50px] bg-black opacity-80 absolute top-[30px] rounded-[10px] flex justify-center items-center hidden">
