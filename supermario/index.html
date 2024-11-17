@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Play Super Mario Bros Game Online</title>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='description' content='Super Mario Bros game online that you can play in web browsers, You can select any level out of 32 map. Enjoy the game!'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel='canonical' href='https://thedinogame.com/supermario/'>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link href="newmario/default.css" rel="stylesheet">
+  <link href="Fonts/stylesheet.css" rel="stylesheet">
+  <meta name='mobile-web-app-capable' content='yes'>
+  <meta name='apple-mobile-web-app-capable' content='yes'>
+  <meta name='application-name' content='Super Mario'>
+  <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+  <meta name='apple-mobile-web-app-title' content='Super Mario'>
+  <link rel='icon' sizes='192x192' href='/images/icon-192x192.png'>
+  <link rel='apple-touch-icon' href='/images/icon-192x192.png'>
+  <meta name='msapplication-TileImage' content='/images/icon-144x144.png'>
+  <meta name='msapplication-TileColor' content='#000000'>
+  <meta name='theme-color' content='#000000'>
+<script type="text/javascript">
+    var is_dev = false;
+    var is_mobile = false;
+    var is_fullscreen = true;
+</script>
+</head>
+
+<body onload="start()" class="fullscreen">
+  <div id="header">
+  <h1 style="text-align:center">Super Mario Bros</h1>
+  </div>
+  
+   <div id="header-left">
+     <a target="_blank" href="/">
+     <img src="images/terminal.gif" style="width:42px;height:42px;"/></a>
+  </div>
+  
+  <div id="header-right" class="other-versions">
+ <ul>
+    <li><a href="/"><img src="../img/dino.png"/></a></li>
+	<li><a href="../sonic/"><img src="../img/sonic.png"/></a></li>	
+	<li><a href="../spiderman/"><img src="../img/spiderman.png"/></a></li>
+	<li><a href="../spongebob/"><img src="../img/spongebob.png"/></a></li>
+	<li><a href="../fullscreen/"><img src="../img/fullscreen.png"/></a></li>	
+	<li><a href="../dino-bridge/" target="_blank"><img src="../img/dino-bridge.png"/></a></li>		
+ </ul>
+  </div>
+  
+  <div id="main">
+  <iframe id="game" loading="lazy" src="mario.html"></iframe>
+    
+  <script type="text/javascript">
+    var iframe = document.getElementById('game');
+    iframe.contentWindow.focus();
+  </script>
+
+ <div id="after">
+        <div id="out_mapselect" class="bar1">
+            <div class="label"><img alt="Select Map" src="newmario/map_icon.png" width="16" alt=""> Map Select</div>
+            <div id="in_mapselect" class="expander"></div>
+        </div>
+	    </div>
+<!-- IKLAN --> 	
+<center>
+
+</center>
+<!-- IKLAN --> 
+
+<div class="infobox">
+<p style="text-align:center; font-weight:800;">Introduction</p>
+<p>
+ Play the Super Mario Bros game online! 
+ You can select any level out of 32 or generate a random map. Enjoy the game!<br>
+ Use <strong>W, A, S, D</strong> keys or arrows <strong>[↑ → ↓ ←]</strong> to move Mario, to jump higher hold the button. 
+ <br>
+ Use <strong>Shift/CTRL</strong> to Fire/Sprint. <strong>P</strong> : Pause, <strong>M</strong> : Mute.</p>
+</div> </div> 
+<div class="footer" style="font-size:14px;">&copy; The Dino Game</div>
+<script src="newmario/ui.js" type="text/javascript"></script>
+<script src="newmario/rocket-loader.min.js" data-cf-settings="-|49" defer=""></script>
+</body>
+
+</html>
