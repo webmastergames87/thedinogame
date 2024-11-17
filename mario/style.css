@@ -11,22 +11,21 @@ html,body{ padding: 0; margin: 0; width: 100%; height: 100%;}
 #online-resources { display: none;}
 /**** Custom Beginning ***/
 a { color: #000;}
-body.main-page { background: #5C94FC;}
+body.main-page { background: #212529;}
 body.header-wrapper { color: #ddd;}
 body.high-scores { color: #bbb;}
-body.other-versions ul li a { color: #fff;}
 ul { margin: 0; padding: 0; list-style: none; }
-p { margin: 0 0 10px; font-size: 16px; line-height: 18px; text-align: center; color: #fff;}
+p { margin: 0 0 10px; font-size: 16px; line-height: 18px; text-align: center; color: #4f4f4f;}
 .wrapperpage { width: auto; max-width: 620px; margin-left: auto; margin-right: auto; font-family: "Pixelify Sans", sans-serif; font-weight: 400; font-style: normal; color: #525252;}
 #dino-game { margin: 0; padding: 0;}
-#dino-game h3 { margin: 0 0 10px; font-size: 16px; font-family: "Times New Roman", Times, serif; text-align: center; color: #0035c9;}
+#dino-game h3 { margin: 0 0 10px; font-size: 16px; font-family: "Times New Roman", Times, serif; text-align: center; color: #006BFF;}
 .online .header-wrapper { margin-bottom: 40px; padding-top: 18px;}
 .online .runner-container,.online .runner-canvas { position: relative;}
 .other-versions { margin-bottom: 30px; text-align: center;}
 .other-versions ul { display: inline-block; margin: 0;}
 .other-versions ul li { float: left; margin: 0 5px; text-align: center;}
 .other-versions ul li img { display: block;}
-.other-versions ul li a { font-size: 12px; font-weight: bold; text-decoration: none;}
+.other-versions ul li a { font-size: 12px; font-weight: bold; text-decoration: none; color: #4f4f4f;}
 .dice {
     width: 1.1rem;
     height: 1.1rem;
@@ -44,12 +43,12 @@ button {
     outline: none;
 	background: transparent;
     border: transparent;
-    color: #4f4f4f;
+    color: #535353;
 	cursor: pointer;
 	transform: translateZ(0);
 }
 button:hover {
-  color: #363636;
+  color: #9BA4B5;
   animation-name: button;
   animation-duration: 0.4s;
   animation-timing-function: linear;
@@ -82,6 +81,9 @@ button:hover {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.25), inset 0 -1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+.button-mario:hover {
+  color: #000;
+} 
 
 .mario-img {
   position: absolute;
@@ -107,7 +109,7 @@ h1 {
 }
 
 #footer { color: #fff; margin: 10px; font-size: 12px;}
-.copyright { position: absolute; left: 0; bottom: 0; padding: 15px 0; width: 100%; color: #000; font-family: "Times New Roman", Times, serif; text-align: center;}
+.copyright { position: absolute; left: 0; bottom: 0; padding: 15px 0; width: 100%; color: #9BA4B5; font-family: "Times New Roman", Times, serif; text-align: center;}
 
 /**** Custom Responsive ***/
 @media screen(max-width: 520px) { 
